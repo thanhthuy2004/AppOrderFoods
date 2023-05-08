@@ -1,0 +1,89 @@
+{
+  "User": {
+    "0356402599": {
+      "isStaff": "true",
+      "name": "Thanh Thùy",
+      "password": "123"
+    },
+    "0989078967": {
+      "isStaff": "true",
+      "name": "Thanh Tâm",
+      "password": "123"
+    },
+    "0987867567": {
+      "isStaff": "false",
+      "name": "Chấn Phong",
+      "password": "123"
+    },
+    "0987635422": {
+      "isStaff": "true",
+      "name": "Hoài Tín",
+      "password": "123"
+    },
+    "0879873456": {
+      "isStaff": "false",
+      "name": "Chí Thông",
+      "password": "123"
+    }
+  },
+  "Category": {
+    "01": {
+      "image": "https://bepmina.vn/wp-content/uploads/2023/03/cach-lam-banh-trang-tron-ngon.jpeg",
+      "name": "Bánh tráng trộn"
+    },
+    "02": {
+      "image": "https://giadinh.mediacdn.vn/2019/11/13/hamburger7-15736340569081067520659.jpg",
+      "name": "Hamburger"
+    },
+    "03": {
+      "image": "https://i-giadinh.vnecdn.net/2021/10/13/saladtron-1634096027-8296-1634096305.jpg",
+      "name": "Salad trộn"
+    },
+    "04": {
+      "image": "https://www.thatlangon.com/wp-content/uploads/2020/06/bun-dau-7-e1593236905415.jpg",
+      "name": "Bún đậu"
+    }
+  },
+  "Foods": {
+    "01": {
+      "name": "Bánh tráng trứng cút",
+      "image": "https://cdn.tgdd.vn/Files/2021/09/29/1386493/cach-lam-banh-trang-tron-gion-ngon-doc-la-mon-an-vat-cuc-de-lam-202109291231250246.jpg",
+      "description": "Ăn ngon hết sảy - Ăn xong muốn nhảy",
+      "price": "5000",
+      "discount": "0",
+      "menuId": "01"
+    },
+    "02": {
+      "name": "Bánh tráng trứng cút",
+      "image": "https://filebroker-cdn.lazada.vn/kf/S8791683a68db4633b0b86c5196904039S.jpg",
+      "description": "Ăn ngon hết sảy - Ăn xong muốn nhảy",
+      "price": "5000",
+      "discount": "0",
+      "menuId": "01"
+    }
+  },
+  "Rating": {
+    "userPhone": "1234567893",
+    "foodID": "01",
+    "rateValue": "0",
+    "comment": "Rất ngon"
+  },
+  "Requests": {
+    "1621343395791": {
+      "address": "124 Quang Trung, Gò Vấp, HCM",
+      "foods": {},
+      "name": "Thanh Thùy",
+      "phone": "1234567893",
+      "status": "0",
+      "total": "500000 VND"
+    },
+    "1621343395793": {
+      "address": "Linh Trung, Thủ Đức, TPHCM",
+      "foods": {},
+      "name": "Thanh Tâm",
+      "phone": "1234567893",
+      "status": "0",
+      "total": "500000 VND"
+    }
+  }
+}
