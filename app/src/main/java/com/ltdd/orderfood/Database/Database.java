@@ -1,11 +1,12 @@
-package com.chungnguyen.orderfood.Database;
+package com.ltdd.orderfood.Database;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteQueryBuilder;
 
-import com.chungnguyen.orderfood.Model.Order;
+import com.ltdd.orderfood.Model.Order;
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ public class Database extends SQLiteAssetHelper {
         super(context, DB_NAME, null, DB_VER);
     }
 
+    @SuppressLint("Range")
     public List<Order> getCarts(){
         SQLiteDatabase db = getReadableDatabase();
         SQLiteQueryBuilder qb = new SQLiteQueryBuilder();

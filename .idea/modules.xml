@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/thuctap2.iml" filepath="$PROJECT_DIR$/thuctap2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/thuctap2.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/thuctap2.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/thuctap2.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/thuctap2.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/thuctap2.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/thuctap2.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/thuctap2.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/thuctap2.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AppOrderFoods.iml" filepath="$PROJECT_DIR$/.idea/modules/AppOrderFoods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.unitTest.iml" />
     </modules>
   </component>
 </project>

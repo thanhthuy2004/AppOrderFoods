@@ -1,4 +1,4 @@
-package com.chungnguyen.orderfood;
+package com.ltdd.orderfood;
 
 import androidx.appcompat.app.AppCompatActivity;
 

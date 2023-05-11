@@ -1,4 +1,4 @@
-package com.chungnguyen.orderfood;
+package com.ltdd.orderfood;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -91,7 +91,7 @@ public class ChangPassOTP extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Intent otpIntent = new Intent(ChangPassOTP.this , ChangPassOtpVetifi.class);
+                        Intent otpIntent = new Intent(ChangPassOTP.this ,ChangPassOtpVetifi.class);
                         otpIntent.putExtra("auth" , s );
                         st=phoneNumberEdit.getText().toString();
                         otpIntent.putExtra("Value" , st );

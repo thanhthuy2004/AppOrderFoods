@@ -1,11 +1,11 @@
-package com.chungnguyen.orderfood.ViewHolder;
+package com.ltdd.orderfood.ViewHolder;
 
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.chungnguyen.orderfood.Interface.ItemClickListener;
-import com.chungnguyen.orderfood.R;
+import com.ltdd.orderfood.Interface.ItemClickListener;
+import com.ltdd.orderfood.R;
 
 
 
