@@ -1,13 +1,13 @@
-package com.chungnguyen.orderfood.ViewHolder;
+package com.ltdd.orderfood.ViewHolder;
 
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.chungnguyen.orderfood.Interface.ItemClickListener;
-import com.chungnguyen.orderfood.R;
-
+import com.ltdd.orderfood.Interface.ItemClickListener;
+import com.ltdd.orderfood.R;
+import com.ltdd.orderfood.Interface.ItemClickListener;
 
 
 public class FoodViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -34,4 +34,6 @@ public class FoodViewHolder extends RecyclerView.ViewHolder implements View.OnCl
     public void onClick(View view) {
         itemClickListener.onClick(view,getAdapterPosition(),false);
     }
+
+
 }

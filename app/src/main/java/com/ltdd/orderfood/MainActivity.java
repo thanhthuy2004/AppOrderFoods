@@ -1,4 +1,4 @@
-package com.chungnguyen.orderfood;
+package com.ltdd.orderfood;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -15,8 +15,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.chungnguyen.orderfood.Common.Common;
-import com.chungnguyen.orderfood.Model.User;
+import com.ltdd.orderfood.Common.Common;
+import com.ltdd.orderfood.Model.User;
 import com.facebook.FacebookSdk;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void printKeyHash() {
         try{
-            PackageInfo info = getPackageManager().getPackageInfo("com.chungnguyen.orderfood", PackageManager.GET_SIGNATURES);
+            PackageInfo info = getPackageManager().getPackageInfo("com.ltdd.orderfood", PackageManager.GET_SIGNATURES);
             for (Signature signature:info.signatures){
                 MessageDigest md = MessageDigest.getInstance("SHA");
                 md.update(signature.toByteArray());

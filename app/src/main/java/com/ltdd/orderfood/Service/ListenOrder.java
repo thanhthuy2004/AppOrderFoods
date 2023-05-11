@@ -1,4 +1,4 @@
-package com.chungnguyen.orderfood.Service;
+package com.ltdd.orderfood.Service;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -9,15 +9,16 @@ import android.content.Intent;
 import android.os.IBinder;
 import androidx.core.app.NotificationCompat;
 
-import com.chungnguyen.orderfood.Common.Common;
-import com.chungnguyen.orderfood.Model.Request;
-import com.chungnguyen.orderfood.OrderStatus;
-import com.chungnguyen.orderfood.R;
+import com.ltdd.orderfood.Common.Common;
+import com.ltdd.orderfood.Model.Request;
+import com.ltdd.orderfood.OrderStatus;
+import com.ltdd.orderfood.R;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.ltdd.orderfood.Model.Request;
 
 public class ListenOrder extends Service implements ChildEventListener {
     FirebaseDatabase db;

@@ -1,4 +1,4 @@
-{
+﻿{
   "User": {
     "0356402599": {
       "isStaff": "true",
@@ -28,8 +28,8 @@
   },
   "Category": {
     "01": {
-      "image": "https://bepmina.vn/wp-content/uploads/2023/03/cach-lam-banh-trang-tron-ngon.jpeg",
-      "name": "Bánh tráng trộn"
+      "image": "https://danviet.mediacdn.vn/upload/1-2016/images/2016-03-04/1457078507-mon-ngon-viet-nam-04.jpg",
+      "name": "Món nước"
     },
     "02": {
       "image": "https://giadinh.mediacdn.vn/2019/11/13/hamburger7-15736340569081067520659.jpg",
@@ -38,28 +38,185 @@
     "03": {
       "image": "https://i-giadinh.vnecdn.net/2021/10/13/saladtron-1634096027-8296-1634096305.jpg",
       "name": "Salad trộn"
-    },
-    "04": {
-      "image": "https://www.thatlangon.com/wp-content/uploads/2020/06/bun-dau-7-e1593236905415.jpg",
-      "name": "Bún đậu"
-    }
+    
   },
+  "04": {
+    "image": "https://i-giadinh.vnecdn.net/2021/10/13/saladtron-1634096027-8296-1634096305.jpg",
+    "name": "Salad trộn"
+  },
+  "06": {
+    "image": "https://www.thatlangon.com/wp-content/uploads/2020/06/bun-dau-7-e1593236905415.jpg",
+    "name": "Nước uống"
+  }
+},
   "Foods": {
     "01": {
-      "name": "Bánh tráng trứng cút",
-      "image": "https://cdn.tgdd.vn/Files/2021/09/29/1386493/cach-lam-banh-trang-tron-gion-ngon-doc-la-mon-an-vat-cuc-de-lam-202109291231250246.jpg",
-      "description": "Ăn ngon hết sảy - Ăn xong muốn nhảy",
-      "price": "5000",
+      "name": "Bún bò Huế",
+      "image": "https://sgv.edu.vn/uploads/images/info/bun-bo-hue-trong-tieng-trung-la-gi.png",
+      "description": "Một tô bún bò chuẩn vị Huế sẽ gồm sợi bún, thịt bò, tiết heo, chả cua và nước dùng",
+      "price": "50000",
       "discount": "0",
       "menuId": "01"
     },
     "02": {
-      "name": "Bánh tráng trứng cút",
-      "image": "https://filebroker-cdn.lazada.vn/kf/S8791683a68db4633b0b86c5196904039S.jpg",
-      "description": "Ăn ngon hết sảy - Ăn xong muốn nhảy",
+      "name": "Bún riêu",
+      "image": "https://pgdconcuong.edu.vn/wp-content/uploads/2023/04/1681363725_395_2-Cach-nau-bun-rieu-cua-dong-ngon-nhu-ngoai-768x433.jpg",
+      "description": "Bún riêu là một trong hàng trăm món ăn dân dã được người Việt Nam từ nông thôn đến thành thị ưa chuộng.",
+      "price": "35000",
+      "discount": "0",
+      "menuId": "01"
+    },
+    "03": {
+      "name": "Bún mắm",
+      "image": "https://cdn.tgdd.vn/Files/2019/03/12/1154316/cach-nau-bun-mam-mien-tay-chuan-thom-ngon-don-gian-tai-nha-202112211640380018.jpg",
+      "description": "Được nấu bằng mắm cá Linh hoặc cá Sặc",
+      "price": "45000",
+      "discount": "0",
+      "menuId": "01"
+    },
+    "04": {
+      "name": "Bún cá ngừ Nha Trang",
+      "image": "https://bepnhamo.vn/wp-content/uploads/2023/04/4-139.jpg",
+      "description": "Bún cá ngừ với phần nước dùng chua chua ngọt ngọt. Thịt cá ngọt, béo ngậy, thơm mùi đặc trưng.",
+      "price": "25000",
+      "discount": "0",
+      "menuId": "01"
+    },
+    "05": {
+      "name": "Bánh canh cua",
+      "image": "https://www.huongnghiepaau.com/wp-content/uploads/2019/01/banh-canh-cua.jpg",
+      "description": "Vị ngọt tươi đặc trưng từ thịt cua và nước dùng sền sệt hòa quyện trong từng sợi bánh canh mềm dai hấp dẫn người ăn.",
+      "price": "35000",
+      "discount": "0",
+      "menuId": "01"
+    },
+    "06": {
+      "name": "Mì vịt tiềm",
+      "image": "https://image-us.eva.vn/upload/2-2021/images/2021-06-04/1622796672-173-thumbnail-width640height480.jpg",
+      "description": "Là món ăn có nguồn gốc xuất xứ từ ẩm thực Trung Hoa được rất nhiều người ưa chuộng hiện nay.",
+      "price": "45000",
+      "discount": "0",
+      "menuId": "01"
+    },
+    "07": {
+      "name": "Miến gà",
+      "image": "https://i.ytimg.com/vi/ko0YRS3Tc2I/maxresdefault.jpg",
+      "description": " Miến gà là món ăn phổ biến được nhiều người ưa chuộng.",
+      "price": "25000",
+      "discount": "0",
+      "menuId": "01"
+    },
+    "08": {
+      "name": "Phở bò",
+      "image": "https://haisancoto.com/uploads/images/cach-nau-pho-bo-ngon-don-gian.jpg",
+      "description": "Thành phần chính của phở là bánh phở  và nước dùng (hay nước lèo theo cách gọi miền Nam) cùng với thịt bò hoặc gà cắt lát mỏng.",
+      "price": "35000",
+      "discount": "0",
+      "menuId": "01"
+    },
+    "09": {
+      "name": "Cao lầu",
+      "image": "https://img.tastykitchen.vn/crop/1200x628/2022/06/03/cao-lau-hoi-an-06-52b7.jpg",
+      "description": "Cao lầu là một loại mì màu vàng, dùng kèm với một ít nước dùng (hầm từ xương heo), có thịt xá xíu, tôm, thịt heo, ăn kèm với một số loại rau sống và bánh đa chiên (hoặc nướng). ",
+      "price": "30000",
+      "discount": "0",
+      "menuId": "01"
+    },
+    "10": {
+      "name": "Mỳ quảng",
+      "image": "https://cdn.tgdd.vn/2021/02/CookProduct/1200-1200x676-16.jpg",
+      "description": "Mỳ Quảng là một món ăn đặc sản đặc trưng của Quảng Nam và Đà Nẵng, Việt Nam.",
       "price": "5000",
       "discount": "0",
       "menuId": "01"
+    },
+    "50": {
+      "name": "Trà tắc",
+      "image": "https://cdn.tgdd.vn/Files/2019/02/19/1150790/cach-lam-tra-tac-tu-pha-da-khat-giai-nhiet-tai-nha-202201221325392886.jpg",
+      "description": "Trà tắc là loại nước uống được chế biến từ sự kết hợp giữa trà và quả tắc.",
+      "price": "15000",
+      "discount": "0",
+      "menuId": "06"
+    },
+    "51": {
+      "name": "Soda chanh",
+      "image": "https://hocphache.com.vn/wp-content/uploads/2016/10/soda-bac-ha-mat-lanh.jpg",
+      "description": "Soda chanh mát lạnh là đồ uống yêu thích của các tín đồ vào ngày hè nóng bức.",
+      "price": "15000",
+      "discount": "0",
+      "menuId": "06"
+    },
+    "52": {
+      "name": "Nước chanh",
+      "image": "https://tintuc.vnshop.vn/wp-content/uploads/2020/05/th%E1%BB%A9c-u%E1%BB%91ng-gi%E1%BA%A3i-nhi%E1%BB%87t-m%C3%B9a-h%C3%A8-n%C6%B0%E1%BB%9Bc-chanh-1068x711.jpg",
+      "description": "Đây là một trong những loại thức uống giải nhiệt mùa hè phổ biến.",
+      "price": "20000",
+      "discount": "0",
+      "menuId": "06"
+    },
+    "53": {
+      "name": "Trà đào chanh sả",
+      "image": "https://tintuc.vnshop.vn/wp-content/uploads/2020/05/th%E1%BB%A9c-u%E1%BB%91ng-gi%E1%BA%A3i-nhi%E1%BB%87t-m%C3%B9a-h%C3%A8-tr%C3%A0-%C4%91%C3%A0o-chanh-x%E1%BA%A3-1068x712.jpg",
+      "description": "Hương vị thanh mát cùng với những lát đào ngọt lịm.",
+      "price": "25000",
+      "discount": "0",
+      "menuId": "06"
+    },
+    "54": {
+      "name": "Rau má đậu xanh nước cốt dừa",
+      "image": "https://bepxua.vn/wp-content/uploads/2021/03/rau-ma-dau-xanh-sua-dua-thumbnail.jpg",
+      "description": "Vị ngọt bùi của đậu xanh, mát lành của rau má, vị béo ngậy của nước cốt dừa khi kết hợp với nhau sẽ cho ra cốc nước đậu xanh rau má ngon lành và bổ dưỡng.",
+      "price": "20000",
+      "discount": "0",
+      "menuId": "06"
+    },
+    "55": {
+      "name": "Mỳ quảng",
+      "image": "https://cdn.tgdd.vn/2021/02/CookProduct/1200-1200x676-16.jpg",
+      "description": "Mỳ Quảng là một món ăn đặc sản đặc trưng của Quảng Nam và Đà Nẵng, Việt Nam.",
+      "price": "5000",
+      "discount": "0",
+      "menuId": "06"
+    },
+    "56": {
+      "name": "Mỳ quảng",
+      "image": "https://cdn.tgdd.vn/2021/02/CookProduct/1200-1200x676-16.jpg",
+      "description": "Mỳ Quảng là một món ăn đặc sản đặc trưng của Quảng Nam và Đà Nẵng, Việt Nam.",
+      "price": "5000",
+      "discount": "0",
+      "menuId": "06"
+    },
+    "57": {
+      "name": "Mỳ quảng",
+      "image": "https://cdn.tgdd.vn/2021/02/CookProduct/1200-1200x676-16.jpg",
+      "description": "Mỳ Quảng là một món ăn đặc sản đặc trưng của Quảng Nam và Đà Nẵng, Việt Nam.",
+      "price": "5000",
+      "discount": "0",
+      "menuId": "06"
+    },
+    "58": {
+      "name": "Mỳ quảng",
+      "image": "https://cdn.tgdd.vn/2021/02/CookProduct/1200-1200x676-16.jpg",
+      "description": "Mỳ Quảng là một món ăn đặc sản đặc trưng của Quảng Nam và Đà Nẵng, Việt Nam.",
+      "price": "5000",
+      "discount": "0",
+      "menuId": "06"
+    },
+    "59": {
+      "name": "Mỳ quảng",
+      "image": "https://cdn.tgdd.vn/2021/02/CookProduct/1200-1200x676-16.jpg",
+      "description": "Mỳ Quảng là một món ăn đặc sản đặc trưng của Quảng Nam và Đà Nẵng, Việt Nam.",
+      "price": "5000",
+      "discount": "0",
+      "menuId": "06"
+    },
+    "60": {
+      "name": "Mỳ quảng",
+      "image": "https://cdn.tgdd.vn/2021/02/CookProduct/1200-1200x676-16.jpg",
+      "description": "Mỳ Quảng là một món ăn đặc sản đặc trưng của Quảng Nam và Đà Nẵng, Việt Nam.",
+      "price": "5000",
+      "discount": "0",
+      "menuId": "06"
     }
   },
   "Rating": {
@@ -87,3 +244,4 @@
     }
   }
 }
+

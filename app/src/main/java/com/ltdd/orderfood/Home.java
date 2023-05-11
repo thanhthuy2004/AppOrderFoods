@@ -1,4 +1,4 @@
-package com.chungnguyen.orderfood;
+package com.ltdd.orderfood;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,14 +17,15 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.chungnguyen.orderfood.Common.Common;
-import com.chungnguyen.orderfood.Interface.ItemClickListener;
-import com.chungnguyen.orderfood.Model.Category;
-import com.chungnguyen.orderfood.Service.ListenOrder;
-import com.chungnguyen.orderfood.ViewHolder.MenuViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.ltdd.orderfood.Common.Common;
+import com.ltdd.orderfood.Interface.ItemClickListener;
+import com.ltdd.orderfood.Model.Category;
+import com.ltdd.orderfood.R;
+import com.ltdd.orderfood.Service.ListenOrder;
+import com.ltdd.orderfood.ViewHolder.MenuViewHolder;
 import com.squareup.picasso.Picasso;
 
 import io.paperdb.Paper;
@@ -36,7 +37,7 @@ public class Home extends AppCompatActivity
     TextView txtFullName;
     RecyclerView recycler_menu;
     RecyclerView.LayoutManager layoutManager;
-    FirebaseRecyclerAdapter<Category,MenuViewHolder> adapter;
+    FirebaseRecyclerAdapter<Category, MenuViewHolder> adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -130,7 +131,7 @@ public class Home extends AppCompatActivity
         if (id == R.id.action_settings) {
             Toast.makeText(this, "Đăng Xuất", Toast.LENGTH_SHORT).show();
 
-            Intent signIn = new Intent(Home.this,SignIn.class);
+            Intent signIn = new Intent(Home.this, SignIn.class);
             signIn.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(signIn);
         }

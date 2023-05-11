@@ -1,10 +1,10 @@
-package com.chungnguyen.orderfood.Common;
+package com.ltdd.orderfood.Common;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import com.chungnguyen.orderfood.Model.User;
+import com.ltdd.orderfood.Model.User;
 
 
 
