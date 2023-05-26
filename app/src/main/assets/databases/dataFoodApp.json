@@ -489,7 +489,8 @@
       "discount": "0",
       "menuId": "05"
     },
-    "51": {
+
+    "56": {
       "name": "Hamburger",
       "price": "65.000",
       "image": "https://chianui.vn/wp-content/uploads/2019/06/B%C3%92-2-T%E1%BA%A6NG_resize_min-800x800.jpg",
@@ -497,7 +498,7 @@
       "discount": "0",
       "menuId": "03"
     },
-    "52": {
+    "57": {
       "name": "Khoai tây chiên",
       "price": "24.000",
       "image": "https://vinpro.store/wp-content/uploads/2022/03/cach-lam-khoai-tay-chien-1.jpg",
@@ -505,7 +506,7 @@
       "discount": "0",
       "menuId": "03"
     },
-    "53": {
+    "58": {
       "name": "Pizza",
       "price": "90.000",
       "image": "https://img.dominos.vn/Pizzaminsea-Hai-San-Nhiet-Doi-Xot-Tieu.jpg",
