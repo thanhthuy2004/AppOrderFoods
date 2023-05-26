@@ -35,20 +35,19 @@
       "image": "https://giadinh.mediacdn.vn/2019/11/13/hamburger7-15736340569081067520659.jpg",
       "name": "Hamburger"
     },
-    "03": {
-      "image": "https://i-giadinh.vnecdn.net/2021/10/13/saladtron-1634096027-8296-1634096305.jpg",
-      "name": "Salad trộn"
-    
+    "04": {
+      "image": "https://cdn.tgdd.vn/2022/10/CookDishThumb/cach-trang-tri-kem-ly-kem-vien-xinh-xan-va-dep-mat-thumb-620x620.jpg",
+      "name": "Tráng miệng"
+    },
+    "05": {
+      "image": "https://daylambanh.edu.vn/wp-content/uploads/2019/05/banh-trang-nuong-bang-chao-600x400.jpg",
+      "name": "Đồ ăn vặt"
+    },
+    "06": {
+      "image": "https://www.thatlangon.com/wp-content/uploads/2020/06/bun-dau-7-e1593236905415.jpg",
+      "name": "Nước uống"
+    }
   },
-  "04": {
-    "image": "https://i-giadinh.vnecdn.net/2021/10/13/saladtron-1634096027-8296-1634096305.jpg",
-    "name": "Salad trộn"
-  },
-  "06": {
-    "image": "https://www.thatlangon.com/wp-content/uploads/2020/06/bun-dau-7-e1593236905415.jpg",
-    "name": "Nước uống"
-  }
-},
   "Foods": {
     "01": {
       "name": "Bún bò Huế",
@@ -130,13 +129,166 @@
       "discount": "0",
       "menuId": "01"
     },
-    "50": {
-      "name": "Trà tắc",
-      "image": "https://cdn.tgdd.vn/Files/2019/02/19/1150790/cach-lam-tra-tac-tu-pha-da-khat-giai-nhiet-tai-nha-202201221325392886.jpg",
-      "description": "Trà tắc là loại nước uống được chế biến từ sự kết hợp giữa trà và quả tắc.",
+
+    "31": {
+      "name": "kem ly",
+      "image": "https://cdn.tgdd.vn/2022/10/CookDishThumb/cach-trang-tri-kem-ly-kem-vien-xinh-xan-va-dep-mat-thumb-620x620.jpg",
+      "description": "ngọt mát lạnh, ngon hết sảy",
       "price": "15000",
       "discount": "0",
-      "menuId": "06"
+      "menuId": "04"
+    },
+    "32": {
+      "name": "trài cây dầm",
+      "image": "https://cdn.vatgia.com/pictures/thumb/0x0/2019/11/1574172558-ugj.jpg",
+      "description": "trái cây ngọt tươi,ngon mát lạnh",
+      "price": "15000",
+      "discount": "0",
+      "menuId": "04"
+    },
+    "33": {
+      "name": "bánh flan",
+      "image": "https://bepcuatoi.com/wp-content/uploads/2021/12/mon-trang-mieng-banh-flan-sua.jpg",
+      "description": "được làm từ trứng và đường vàng khiến bánh mềm tan trong miệng",
+      "price": "15000",
+      "discount": "0",
+      "menuId": "04"
+    },
+    "34": {
+      "name": "bánh mousse cam béo ngậy",
+      "image": "https://bepcuatoi.com/wp-content/uploads/2021/12/banh-trang-mieng-mousse-cam.jpg",
+      "description": "bánh ngon từ cam tươi ngọt béo ngậy",
+      "price": "15000",
+      "discount": "0",
+      "menuId": "04"
+    },
+    "35": {
+      "name": "chè mít",
+      "image": "https://cdn.tgdd.vn/2021/11/CookRecipe/Avatar/che-mit-thai-lan-thumbnail.jpeg",
+      "description": "được làm từ nhiều loại dầu cùng với mít thanh mát ngày hè",
+      "price": "15000",
+      "discount": "0",
+      "menuId": "04"
+    },
+    "36": {
+      "name": "chè thái",
+      "image": "https://daynauan.info.vn/wp-content/uploads/2018/08/che-thai-sau-rieng.jpg",
+      "description": "được làm từ nhiều loại dầu cùng với sẩu riêng thanh mát ngày hè",
+      "price": "15000",
+      "discount": "0",
+      "menuId": "04"
+    },
+    "37": {
+      "name": "yaourt trái cây",
+      "image": "https://nghebep.com/wp-content/uploads/2017/12/sua-chua-hay-con-goi-la-yaourt.jpg",
+      "description": "ngọt ngọt chua chua giải khác mùa hè nóng bức",
+      "price": "10000",
+      "discount": "0",
+      "menuId": "04"
+    },
+    "38": {
+      "name": "bành ngọt dâu tây",
+      "image": "https://cdn.popsww.com/blog/sites/2/2022/06/banh_ngot_la_mon_an_vat_hap_dan_va_giau_nang_luong.jpg",
+      "description": "ngọt béo cùng với sự tươi của dâu tây đà lạt",
+      "price": "10000",
+      "discount": "0",
+      "menuId": "04"
+    },
+    "39": {
+      "name": "trái cây tráng miệng",
+      "image": "https://skibanen.com/wp-content/uploads/2021/08/cach-trang-tri-dia-trai-cay-trang-mieng-don-gian-de-thuc-hien.jpg",
+      "description": "làm từ nhiều loại trái cây khác nhau ",
+      "price": "15000",
+      "discount": "0",
+      "menuId": "04"
+    },
+    "40": {
+      "name": "kem dừa",
+      "image": "https://www.huongnghiepaau.com/wp-content/uploads/2017/06/kem-dua.jpg",
+      "description": "ngọt thành làm từ dừa nguyên chất, cảm nhận được tươi mát",
+      "price": "10000",
+      "discount": "0",
+      "menuId": "04"
+    },
+    "41": {
+      "name": "Bánh tráng nướng",
+      "image": "https://daylambanh.edu.vn/wp-content/uploads/2019/05/banh-trang-nuong-bang-chao-600x400.jpg",
+      "description": "bánh giòn tan trong miệng, ngon hết sảy",
+      "price": "10000",
+      "discount": "0",
+      "menuId": "05"
+    },
+    "42": {
+      "name": "cá viên chiên",
+      "image": "https://www.adcfoods.com/wp-content/uploads/2021/11/ca-vien-chien-bao-nhieu-calo.jpg",
+      "description": "có nhiều loại cá viên chiên đủ loại",
+      "price": "15000",
+      "discount": "0",
+      "menuId": "05"
+    },
+    "43": {
+      "name": "bánh tráng trộn",
+      "image": "https://cdn.tgdd.vn/Files/2020/11/20/1308176/banh-trang-tron-qua-dem-co-an-duoc-khong-202112301058389320.jpg",
+      "description": "đầy đủ topping",
+      "price": "15000",
+      "discount": "0",
+      "menuId": "05"
+    },
+    "44": {
+      "name": "bắp nướng",
+      "image": "https://www.monngon.tv/uploads/images/images/bap-nuong-mo-hanh-1.jpg",
+      "description": "Ăn ngon hết sảy",
+      "price": "5000",
+      "discount": "0",
+      "menuId": "05"
+    },
+    "45": {
+      "name": "khoai nướng",
+      "image": "https://hocnauan.edu.vn/wp-content/uploads/2014/03/khoai-lang-nuong.jpg",
+      "description": "khoai nướng mềm dẻo ăn ngon hết sảy",
+      "price": "5000",
+      "discount": "0",
+      "menuId": "05"
+    },
+    "46": {
+      "name": "xoài lắc",
+      "image": "https://cachlammonngon.vn/wp-content/uploads/2016/08/xoai-lac-2.jpg",
+      "description": "xoài tươi mới chua chua ngọt ngọt ăn rất ngon",
+      "price": "15000",
+      "discount": "0",
+      "menuId": "05"
+    },
+    "47": {
+      "name": "cóc lắc",
+      "image": "https://quangon.vn/resources/2020/05/08/coc-lac-muoi-ot-6.jpg",
+      "description": "cóc giòn chua chua ngọt ngọt ăn rất ngon",
+      "price": "15000",
+      "discount": "0",
+      "menuId": "05"
+    },
+    "48": {
+      "name": "da heo chiên giòn",
+      "image": "https://seavy.vn/wp-content/uploads/2022/12/da-heo-chien-gion.jpg",
+      "description": "da heo chiện giòn, sốt đậm vị ăn ngon hết sảy",
+      "price": "50000",
+      "discount": "0",
+      "menuId": "05"
+    },
+    "49": {
+      "name": "khô gà",
+      "image": "https://cdn.tgdd.vn/Files/2020/08/29/1284950/kho-ga-co-bao-nhieu-loai-loai-nao-ngon-ma-de-bao-quan-nhat-202008290859554255.jpg",
+      "description": "khô gà thơm lá chanh ăn vào ngọt ngọt cay cay",
+      "price": "50000",
+      "discount": "0",
+      "menuId": "05"
+    },
+    "50": {
+      "name": "mực hấp nước dừa",
+      "image": "https://cdn.chonongsanonline.com/uploads/all/Tchn3vN3ryXqx2q2MQAMPUeqoM2GtoRtbir0qBIJ.jpg",
+      "description": "mực trăng hấp dẫn thơm đậm vị nước dừa",
+      "price": "65000",
+      "discount": "0",
+      "menuId": "05"
     },
     "51": {
       "name": "Soda chanh",
@@ -392,4 +544,3 @@
     }
   }
 }
-
