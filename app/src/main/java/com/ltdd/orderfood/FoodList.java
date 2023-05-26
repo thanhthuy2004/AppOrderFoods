@@ -1,4 +1,4 @@
-package com.chungnguyen.orderfood;
+package com.ltdd.orderfood;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -12,10 +12,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Toast;
 
-import com.chungnguyen.orderfood.Database.Database;
-import com.chungnguyen.orderfood.Interface.ItemClickListener;
-import com.chungnguyen.orderfood.Model.Food;
-import com.chungnguyen.orderfood.ViewHolder.FoodViewHolder;
+import com.ltdd.orderfood.ViewHolder.FoodViewHolder;
 import com.facebook.CallbackManager;
 import com.facebook.share.model.SharePhoto;
 import com.facebook.share.model.SharePhotoContent;
@@ -26,6 +23,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.ltdd.orderfood.Database.Database;
+
+import com.ltdd.orderfood.Interface.ItemClickListener;
+import com.ltdd.orderfood.Model.Food;
 import com.mancj.materialsearchbar.MaterialSearchBar;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;

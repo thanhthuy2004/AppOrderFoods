@@ -1,13 +1,13 @@
-package com.chungnguyen.orderfood;
+package com.ltdd.orderfood;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.chungnguyen.orderfood.Common.Common;
-import com.chungnguyen.orderfood.Model.Request;
-import com.chungnguyen.orderfood.ViewHolder.OrderViewHolder;
+import com.ltdd.orderfood.Common.Common;
+import com.ltdd.orderfood.Model.Request;
+import com.ltdd.orderfood.ViewHolder.OrderViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;

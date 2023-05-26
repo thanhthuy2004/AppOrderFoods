@@ -1,4 +1,4 @@
-package com.chungnguyen.orderfood;
+package com.ltdd.orderfood;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -16,13 +16,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.chungnguyen.orderfood.Common.Common;
-import com.chungnguyen.orderfood.Database.Database;
-import com.chungnguyen.orderfood.Model.Order;
-import com.chungnguyen.orderfood.Model.Request;
-import com.chungnguyen.orderfood.ViewHolder.CartAdapter;
+
+import com.ltdd.orderfood.ViewHolder.CartAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.ltdd.orderfood.Common.Common;
+import com.ltdd.orderfood.Database.Database;
+import com.ltdd.orderfood.Model.Order;
+import com.ltdd.orderfood.Model.Request;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;

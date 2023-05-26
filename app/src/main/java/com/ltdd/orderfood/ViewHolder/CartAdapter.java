@@ -1,4 +1,4 @@
-package com.chungnguyen.orderfood.ViewHolder;
+package com.ltdd.orderfood.ViewHolder;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -12,9 +12,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.amulyakhare.textdrawable.TextDrawable;
-import com.chungnguyen.orderfood.Common.Common;
-import com.chungnguyen.orderfood.Model.Order;
-import com.chungnguyen.orderfood.R;
+import com.ltdd.orderfood.Common.Common;
+import com.ltdd.orderfood.Model.Order;
+import com.ltdd.orderfood.R;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.chungnguyen.orderfood;
+package com.ltdd.orderfood;
 
 import android.os.Bundle;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
@@ -12,18 +12,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
-import com.chungnguyen.orderfood.Common.Common;
-import com.chungnguyen.orderfood.Database.Database;
-import com.chungnguyen.orderfood.Model.Food;
-import com.chungnguyen.orderfood.Model.Order;
-import com.chungnguyen.orderfood.Model.Rating;
-import com.chungnguyen.orderfood.ViewHolder.FoodViewHolder;
+
+import com.ltdd.orderfood.ViewHolder.FoodViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.ltdd.orderfood.Common.Common;
+import com.ltdd.orderfood.Database.Database;
+import com.ltdd.orderfood.Model.Food;
+import com.ltdd.orderfood.Model.Order;
+import com.ltdd.orderfood.Model.Rating;
 import com.squareup.picasso.Picasso;
 import com.stepstone.apprating.AppRatingDialog;
 import com.stepstone.apprating.listener.RatingDialogListener;

@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/OrderFoodCustomer.iml" filepath="$PROJECT_DIR$/.idea/modules/OrderFoodCustomer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.unitTest.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AppOrderFoods.iml" filepath="$PROJECT_DIR$/.idea/modules/AppOrderFoods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.unitTest.iml" />
+>>>>>>> 8daa120f8fc352f51097276fb5c9faa999f88ec9
     </modules>
   </component>
 </project>
