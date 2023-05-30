@@ -39,8 +39,8 @@
         android:layout_below="@+id/Tv1"
         android:layout_alignStart="@+id/input_phone"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/eddittext_style"
         android:gravity="center"
         android:text="84"
@@ -53,13 +53,13 @@
 
     <EditText
         android:id="@+id/input_phone"
-        android:layout_width="268dp"
-        android:layout_height="46dp"
+        android:layout_width="276dp"
+        android:layout_height="47dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/eddittext_style"
         android:hint="@string/_0938472096"
         android:imeOptions="actionNone"
@@ -84,7 +84,7 @@
         android:gravity="center"
 
         android:text="Send Otp"
-        android:textColor="#000000"
+        android:textColor="@color/colorText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_phone"
         tools:ignore="MissingConstraints" />

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.chungnguyen.orderfood.MainActivity">
+    tools:context="com.ltdd.orderfood.MainActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -40,14 +40,14 @@
             android:background="@drawable/button_style_sign_in"
 
             android:text="Đăng ký"
-            android:textColor="#000000" />
+            android:textColor="@color/colorText" />
 
         <Button
 
             android:background="@drawable/button_style_sign_up"
             android:layout_weight="1"
             android:text="Đăng nhập"
-            android:textColor="#000000"
+            android:textColor="@color/colorText"
             android:id="@+id/btnSignIn"
 
             android:layout_width="0dp"

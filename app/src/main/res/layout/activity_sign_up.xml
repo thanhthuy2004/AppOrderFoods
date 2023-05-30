@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back10"
-    tools:context="com.chungnguyen.orderfood.SignUp">
+    tools:context="com.ltdd.orderfood.SignUp">
     <ImageView
         android:layout_marginTop="50dp"
         android:src="@drawable/logo2"
@@ -66,10 +66,10 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="95dp"
+        android:layout_marginBottom="182dp"
         android:layout_weight="1"
         android:background="@drawable/button_style_sign_up"
         android:text="Đăng ký"
-        android:textColor="@color/overlayActionBar" />
+        android:textColor="@color/colorText" />
 
 </RelativeLayout>

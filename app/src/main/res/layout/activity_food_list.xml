@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back11"
-    tools:context="com.chungnguyen.orderfood.FoodList">
+    tools:context="com.ltdd.orderfood.FoodList">
     <com.mancj.materialsearchbar.MaterialSearchBar
         android:id="@+id/searchBar"
         android:layout_alignParentTop="true"
