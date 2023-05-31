@@ -51,7 +51,8 @@
             android:gravity="center_vertical"
             android:id="@+id/ckbRemember"
             android:text="Nhớ tài khoản"
-            android:textSize="18dp"
+            android:textSize="30sp"
+
             android:textColor="@color/colorPrimaryDark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

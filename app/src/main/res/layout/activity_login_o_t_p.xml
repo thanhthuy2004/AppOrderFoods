@@ -36,7 +36,7 @@
     <EditText
         android:id="@+id/input_country_code"
         android:layout_width="60dp"
-        android:layout_height="47dp"
+        android:layout_height="55dp"
         android:layout_below="@+id/Tv1"
         android:layout_alignStart="@+id/input_phone"
         android:layout_alignParentEnd="true"
@@ -55,7 +55,7 @@
     <EditText
         android:id="@+id/input_phone"
         android:layout_width="287dp"
-        android:layout_height="47dp"
+        android:layout_height="55dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
