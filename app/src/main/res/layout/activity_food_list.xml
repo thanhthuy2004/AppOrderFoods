@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back11"
+    android:background="@drawable/background"
     tools:context="com.ltdd.orderfood.FoodList">
     <com.mancj.materialsearchbar.MaterialSearchBar
         android:id="@+id/searchBar"
         android:layout_alignParentTop="true"
         app:mt_speechMode="false"
         app:mt_hint="Tìm kiếm món ăn"
+        app:mt_hintColor="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <androidx.recyclerview.widget.RecyclerView

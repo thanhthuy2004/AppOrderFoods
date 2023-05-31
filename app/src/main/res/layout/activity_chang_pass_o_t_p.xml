@@ -25,9 +25,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:gravity="center"
-        android:text="Nhập số điện thoại để nhận mã xác thực"
+        android:text="Nhập số điện thoại"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="14sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/sharedocument"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp" />
@@ -83,7 +84,7 @@
         android:background="@drawable/button_style_sign_up"
         android:gravity="center"
 
-        android:text="Send Otp"
+        android:text="Gửi OTP"
         android:textColor="@color/colorText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_phone"

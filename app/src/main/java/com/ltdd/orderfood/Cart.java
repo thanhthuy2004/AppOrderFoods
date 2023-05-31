@@ -110,9 +110,12 @@ public class Cart extends AppCompatActivity implements CartAdapter.OnItemClickLi
         adapter = new CartAdapter(cart, this,this);
         adapter.notifyDataSetChanged();
         recyclerView.setAdapter(adapter);
-        int total =0;
-        for(Order order:cart)
-                total+=(Integer.parseInt(order.getPrice()))*(Integer.parseInt(order.getQuantity()));
+        int total = 0;
+        for(Order order:cart) {
+            String price = order.getPrice();
+//            if(price.equals("15.000")) price = "15000";
+            total += Integer.parseInt(price) * (Integer.parseInt(order.getQuantity()));
+        }
         //Locale locale = new Locale("vi","VN");
        // NumberFormat fmt = NumberFormat.getCurrencyInstance(locale);
         DecimalFormat formatter = new DecimalFormat("###,###,###");

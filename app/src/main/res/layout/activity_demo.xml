@@ -4,8 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
     tools:context=".Demo">
+    <ImageView
+        android:foreground="@drawable/foreground_design"
+        android:id="@+id/imgBr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/back"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,15 +29,15 @@
             tools:layout_editor_absoluteX="54dp" />
 
         <TextView
+            android:id="@+id/txt_Food"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="cursive"
+            android:fontFamily="@font/lobster"
             android:gravity="center"
             android:text="Order Food And Drink"
-            android:textSize="33dp"
-            android:id="@+id/txt_Food"
+            android:textColor="#ff5353"
+            android:textSize="38dp"
             android:textStyle="bold"
-            android:textColor="#EF0B26"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="334dp" />
 

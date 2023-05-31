@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">OrderFood</string>
     <string name="slogan">No matter where you are: where you are at home or in the office, or on the beach. We will find you and we will feed you</string>
-    <string name="gach"><u><b><i>Bạn quên mật khẩu đăng nhập?</i></b></u></string>
+    <string name="forgetPass"><u><b><i>Quên mật khẩu?</i></b></u></string>
     <string name="title_activity_home">Thực đơn chính</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -12,4 +12,7 @@
     <string name="_84">+84</string>
     <string name="_0938472096">0938472096</string>
     <string name="facebook_login_protocol_name">fb162421361046767</string>
+    <string name="food_name">Food name</string>
+    <string name="slg">1.000</string>
+    <string name="Description">Description</string>
 </resources>

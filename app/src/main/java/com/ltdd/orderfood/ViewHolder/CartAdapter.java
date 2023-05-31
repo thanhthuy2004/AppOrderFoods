@@ -80,7 +80,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartViewHolder> {
         holder.imd_cart_count.setImageDrawable(drawable);
 
         DecimalFormat formatter = new DecimalFormat("###,###,###");
-        int price = (Integer.parseInt(listData.get(position).getPrice()))*(Integer.parseInt(listData.get(position).getQuantity()));
+        String p = listData.get(position).getPrice();
+//        if(p.equals("15.000")) p = "15000";
+        int price = (Integer.parseInt(p))*(Integer.parseInt(listData.get(position).getQuantity()));
         holder.txt_price.setText(formatter.format(price)+" VND");
         holder.txt_cart_name.setText(listData.get(position).getProductName());
     }

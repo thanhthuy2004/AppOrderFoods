@@ -76,7 +76,7 @@
             android:textColor="@color/colorPrimaryDark"
             android:layout_marginTop="8dp"
             android:textSize="18dp"
-            android:text="@string/gach"
+            android:text="@string/forgetPass"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" />
     </LinearLayout>

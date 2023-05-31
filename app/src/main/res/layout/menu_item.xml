@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="200dp"
     app:cardElevation="10dp"
-    android:layout_margin="10dp"
-    app:cardCornerRadius="0dp">
+    android:layout_margin="8dp"
+    app:cardCornerRadius="30dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -28,7 +28,8 @@
             android:gravity="center"
             android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:padding="2dp"/>
     </RelativeLayout>
 
 

@@ -6,7 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.ltdd.orderfood.MainActivity">
-
+    <ImageView
+        android:foreground="@drawable/foreground_design"
+        android:id="@+id/imgBr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/back"/>
     <LinearLayout
         android:orientation="vertical"
         android:layout_centerInParent="true"
@@ -72,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="405dp"
-        android:fontFamily="cursive"
+        android:fontFamily="@font/lobster"
         android:gravity="center"
         android:text="Order Food And Drink"
         android:textColor="#EF0B26"
