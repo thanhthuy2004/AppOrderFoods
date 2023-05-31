@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 
-public class    OTPVerify extends AppCompatActivity {
+public class   OTPVerify extends AppCompatActivity {
     private Button mVerifyCodeBtn;
     private EditText otpEdit;
     private String OTP;
@@ -49,7 +49,7 @@ public class    OTPVerify extends AppCompatActivity {
                     PhoneAuthCredential credential = PhoneAuthProvider.getCredential(OTP , verification_code);
                     signIn(credential);
                 }else{
-                    Toast.makeText(OTPVerify.this, "Please Enter OTP", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(OTPVerify.this, "Vui lòng nhập mã OTP", Toast.LENGTH_SHORT).show();
                 }
             }
         });

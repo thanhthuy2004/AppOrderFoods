@@ -59,7 +59,6 @@ public class SignUp extends AppCompatActivity {
                             }
                         }
 
-
                         @Override
                         public void onCancelled(DatabaseError databaseError) {
 
