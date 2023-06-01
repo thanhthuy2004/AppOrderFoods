@@ -199,13 +199,10 @@ public class FoodList extends AppCompatActivity {
 
 
                 final Food local = model;
-                viewHolder.setItemClickListener(new ItemClickListener() {
-                    @Override
-                    public void onClick(View view, int posittion, boolean isLongClick) {
-                        Intent foodDetail = new Intent(FoodList.this,FoodDetail.class);
-                        foodDetail.putExtra("FoodId",adapter.getRef(position).getKey());
-                        startActivity(foodDetail);
-                    }
+                viewHolder.setItemClickListener((view, posittion, isLongClick) -> {
+                    Intent foodDetail = new Intent(FoodList.this,FoodDetail.class);
+                    foodDetail.putExtra("FoodId",adapter.getRef(position).getKey());
+                    startActivity(foodDetail);
                 });
             }
         };

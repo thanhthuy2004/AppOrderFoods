@@ -42,7 +42,7 @@ public class ChangPass extends AppCompatActivity {
 
                 if (Common.isConnectedToInterner(getBaseContext())) {
                     final ProgressDialog mDialog = new ProgressDialog(ChangPass.this);
-                    mDialog.setMessage("Vui lòng chờ");
+                    mDialog.setMessage("Vui lòng chờ...");
                     mDialog.show();
 
                     talbe_user.addValueEventListener(new ValueEventListener() {
@@ -56,7 +56,7 @@ public class ChangPass extends AppCompatActivity {
                                 if(passInput.equals(user.getPassword())) {
                                     user.setPassword(edtPassword.getText().toString());
                                     talbe_user.child(edtPhone.getText().toString()).setValue(user);
-                                    Toast.makeText(ChangPass.this, "Bạn thay đổi thành công", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(ChangPass.this, "Bạn đã thay đổi mật khẩu thành công", Toast.LENGTH_LONG).show();
                                     finish();
                                 }
                                 else{

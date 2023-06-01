@@ -16,6 +16,9 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class OrderStatus extends AppCompatActivity {
     public RecyclerView recyclerView;
     public RecyclerView.LayoutManager layoutManager;
@@ -37,6 +40,9 @@ public class OrderStatus extends AppCompatActivity {
         loadOrders(Common.currentUser.getPhone());
     }
     private void loadOrders(String phone) {
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        layoutManager.setReverseLayout(true); // đảo ngược thứ tự các mục trong danh sách
+        layoutManager.setStackFromEnd(true);
         adapter = new FirebaseRecyclerAdapter<Request, OrderViewHolder>(
                 Request.class,
                 R.layout.order_layout,
@@ -46,10 +52,13 @@ public class OrderStatus extends AppCompatActivity {
             @Override
             protected void populateViewHolder(OrderViewHolder viewHolder, Request model, int position) {
                 viewHolder.txtOrderId.setText("ID đơn hàng:  "+adapter.getRef(position).getKey());
+//                viewHolder.txtDate.setText("Ngày đặt:  "+Common.getDate(Long.parseLong(adapter.getRef(position).getKey())));
+                viewHolder.txtDate.setText("Ngày đặt:  "+ model.getDate());
                 viewHolder.txtOrderStatus.setText("Trạng thái:  "+Common.convertCodeToStatus(model.getStatus()));
                 viewHolder.txtOrderPhone.setText("SĐT:  "+model.getPhone());
                 viewHolder.txtGmail.setText("Địa chỉ:  "+model.getAddress());
                 viewHolder.txtTotal.setText("Tổng:  "+model.getTotal());
+
 
                 viewHolder.setItemClickListener((view, position1, isLongClick) -> {
                     Intent orderDetail = new Intent(OrderStatus.this, OrderDetail.class);
@@ -62,5 +71,6 @@ public class OrderStatus extends AppCompatActivity {
         };
         adapter.notifyDataSetChanged();
         recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(layoutManager);
     }
 }

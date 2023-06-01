@@ -11,7 +11,7 @@ import com.ltdd.orderfood.R;
 
 
 public class OrderViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-    public TextView txtOrderId,txtOrderStatus,txtOrderPhone,txtGmail,txtTotal;
+    public TextView txtOrderId,txtOrderStatus,txtOrderPhone,txtGmail,txtTotal, txtDate;
     private ItemClickListener itemClickListener;
 
     public void setItemClickListener(ItemClickListener itemClickListener) {
@@ -25,6 +25,7 @@ public class OrderViewHolder extends RecyclerView.ViewHolder implements View.OnC
         txtOrderPhone = itemView.findViewById(R.id.order_phone);
         txtGmail = itemView.findViewById(R.id.order_gmail);
         txtTotal = itemView.findViewById(R.id.order_total);
+        txtDate = itemView.findViewById(R.id.order_date);
 
         itemView.setOnClickListener(this);
     }

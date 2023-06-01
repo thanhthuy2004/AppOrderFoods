@@ -68,7 +68,6 @@ public class ListenOrder extends Service implements ChildEventListener {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             String channelId = "notice";
             CharSequence channelName = "notice";
-            String channelDescription = "notice";
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
             NotificationChannel channel = new NotificationChannel(channelId, channelName, importance);
             NotificationManager manager = getSystemService(NotificationManager.class);

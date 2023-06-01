@@ -144,7 +144,7 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
                 .setNegativeButtonText("Hủy")
                 .setNoteDescriptions(Arrays.asList("Rất tồi","Không tốt","Tạm được","Rất tốt","Trên tuyệt vời"))
                 .setDefaultRating(1)
-                .setTitle("Đánh giá tài liệu")
+                .setTitle("Đánh giá")
                 .setDescription("Hãy chọn số sao và để lại feedback cho chúng tôi")
                 .setTitleTextColor(R.color.colorPrimary)
                 .setDescriptionTextColor(R.color.colorPrimary)
@@ -166,7 +166,7 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
                 Picasso.with(getBaseContext()).load(currentFood.getImage()).into(food_image);
                 collapsingToolbarLayout.setTitle(currentFood.getName());
                 food_name.setText(currentFood.getName());
-                food_price.setText("Giá : "+currentFood.getPrice()+" VNĐ");
+                food_price.setText("Giá : "+currentFood.getPrice()+" VND");
                 food_description.setText(currentFood.getDescription());
             }
 

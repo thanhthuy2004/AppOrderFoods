@@ -68,7 +68,7 @@ public class Cart extends AppCompatActivity implements CartAdapter.OnItemClickLi
     }
     private void showAlertDialog() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(Cart.this);
-        alertDialog.setTitle("Địa chỉ giao thức ăn");
+        alertDialog.setTitle("Địa chỉ giao");
 
         alertDialog.setMessage("Nhập vào địa chỉ của bạn:  ");
         final EditText edtAddress = new EditText(Cart.this);
@@ -87,6 +87,7 @@ public class Cart extends AppCompatActivity implements CartAdapter.OnItemClickLi
                         Common.currentUser.getName(),
                         edtAddress.getText().toString(),
                         txtTotalPrice.getText().toString(),
+                        Common.getDate(),
                         cart
                 );
                 requests.child(String.valueOf(System.currentTimeMillis())).setValue(request);
@@ -114,11 +115,8 @@ public class Cart extends AppCompatActivity implements CartAdapter.OnItemClickLi
         int total = 0;
         for(Order order:cart) {
             String price = order.getPrice();
-//            if(price.equals("15.000")) price = "15000";
             total += Integer.parseInt(price) * (Integer.parseInt(order.getQuantity()));
         }
-        //Locale locale = new Locale("vi","VN");
-       // NumberFormat fmt = NumberFormat.getCurrencyInstance(locale);
         DecimalFormat formatter = new DecimalFormat("###,###,###");
         txtTotalPrice.setText(formatter.format(total)+" VND");
     }
