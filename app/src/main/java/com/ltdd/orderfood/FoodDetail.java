@@ -5,6 +5,8 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -64,7 +66,7 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
         btnRating =  findViewById(R.id.btnRating);
         ratingBar =  findViewById(R.id.ratingBar);
         numberButton = findViewById(R.id.number_button);
-        cart = new Database(this).getCarts();
+
 
         btnRating.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,9 +78,11 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
         btnMua.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                cart = new Database(getBaseContext()).getCarts();
 
                 int getIndexCart = new Database(getBaseContext()).checkItembyListCart(foodId,cart);
-                if(  getIndexCart == -1){
+                Log.d("myTag", String.valueOf(getIndexCart));
+                if( getIndexCart == -1){
                     new Database(getBaseContext()).addToCart(new Order(
                             foodId,
                             currentFood.getName(),
@@ -87,17 +91,16 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
                             currentFood.getDiscount()
                     ));
                 }else {
+
                     int quantity  = Integer.parseInt(cart.get(getIndexCart).getQuantity())
                             + Integer.parseInt(numberButton.getNumber());
                     cart.get(getIndexCart).setQuantity(String.valueOf(quantity));
                     new Database(getBaseContext()).cleanCart();
                     for (Order item:cart) {
-
                         new Database(getBaseContext()).addToCart(item);
                     }
 
                 }
-
 
                 Toast.makeText(FoodDetail.this,"Thêm vào giỏ hàng",Toast.LENGTH_SHORT).show();
             }
