@@ -52,9 +52,9 @@ public class ChangPass extends AppCompatActivity {
                                 mDialog.dismiss();
 
                                 User user = dataSnapshot.child(edtPhone.getText().toString()).getValue(User.class);
-                                String passInput = edtPassword.getText().toString();
+                                String passInput = edtOldPass.getText().toString();
                                 if(passInput.equals(user.getPassword())) {
-                                    user.setPassword(passInput);
+                                    user.setPassword(edtPassword.getText().toString());
                                     talbe_user.child(edtPhone.getText().toString()).setValue(user);
                                     Toast.makeText(ChangPass.this, "Bạn thay đổi thành công", Toast.LENGTH_LONG).show();
                                     finish();
