@@ -7,11 +7,11 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppOrderFoods.app.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OrderFoodCustomer.iml" filepath="$PROJECT_DIR$/.idea/modules/OrderFoodCustomer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OrderFoodCustomer.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Downloads.AppOrderFoods.iml" filepath="$PROJECT_DIR$/.idea/modules/Downloads.AppOrderFoods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Downloads.AppOrderFoods.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Downloads.AppOrderFoods.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Downloads.AppOrderFoods.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Downloads.AppOrderFoods.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Downloads.AppOrderFoods.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Downloads.AppOrderFoods.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Downloads.AppOrderFoods.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Downloads.AppOrderFoods.app.unitTest.iml" />
     </modules>
   </component>
 </project>

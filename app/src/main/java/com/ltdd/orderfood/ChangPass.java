@@ -1,7 +1,5 @@
 package com.ltdd.orderfood;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.View;
@@ -9,36 +7,39 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.ltdd.orderfood.Common.Common;
-import com.ltdd.orderfood.Model.User;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.ltdd.orderfood.Common.Common;
+import com.ltdd.orderfood.Model.User;
 
 public class ChangPass extends AppCompatActivity {
-    EditText edtPhone,edtName,edtPassword;
-    Button btnSignUp;
+    EditText edtPhone,edtOldPass,edtPassword;
+    Button btnSave;
     String sdt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chang_pass);
         edtPhone =  findViewById(R.id.edtPhone);
-        edtName =  findViewById(R.id.edtName);
-        edtPassword =  findViewById(R.id.edtPassword);
+        edtOldPass=  findViewById(R.id.oldPass);
+        edtPassword =  findViewById(R.id.newPass);
 
-        btnSignUp =  findViewById(R.id.btnSignUp);
-        sdt=getIntent().getExtras().getString("SDT");
-        edtPhone.setText(sdt);
+        btnSave =  findViewById(R.id.btnSignUp);
+
+
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference talbe_user = database.getReference("User");
 
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if (Common.isConnectedToInterner(getBaseContext())) {
                     final ProgressDialog mDialog = new ProgressDialog(ChangPass.this);
                     mDialog.setMessage("Vui lòng chờ");
@@ -50,13 +51,20 @@ public class ChangPass extends AppCompatActivity {
                             if (dataSnapshot.child(edtPhone.getText().toString()).exists()) {
                                 mDialog.dismiss();
 
-                                User user = new User(edtName.getText().toString(), edtPassword.getText().toString());
-                                talbe_user.child(edtPhone.getText().toString()).setValue(user);
-                                Toast.makeText(ChangPass.this, "Bạn thay đổi thành công", Toast.LENGTH_LONG).show();
-                                finish();
+                                User user = dataSnapshot.child(edtPhone.getText().toString()).getValue(User.class);
+                                String passInput = edtOldPass.getText().toString();
+                                if(passInput.equals(user.getPassword())) {
+                                    talbe_user.child(edtPhone.getText().toString()).setValue(user);
+                                    Toast.makeText(ChangPass.this, "Bạn thay đổi thành công", Toast.LENGTH_LONG).show();
+                                    finish();
+                                }
+                                else{
+                                    Toast.makeText(ChangPass.this, "Mật khẩu cũ mà bạn nhập không đúng!", Toast.LENGTH_LONG).show();
+                                    finish();
+                                }
                             } else {
                                 mDialog.dismiss();
-                                Toast.makeText(ChangPass.this, "Vui Lòng kiểm tra lại SDt", Toast.LENGTH_LONG).show();
+                                Toast.makeText(ChangPass.this, "Vui Lòng kiểm tra lại số điện thoại", Toast.LENGTH_LONG).show();
                             }
                         }
 
