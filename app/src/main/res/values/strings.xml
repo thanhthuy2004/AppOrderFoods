@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">OrderFood</string>
-    <string name="slogan">No matter where you are: where you are at home or in the office, or on the beach. We will find you and we will feed you</string>
+    <string name="slogan">Order Food And Drink</string>
     <string name="forgetPass"><u><b><i>Quên mật khẩu?</i></b></u></string>
-    <string name="title_activity_home">Thực đơn chính</string>
+    <string name="title_activity_home">Thực đơn</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

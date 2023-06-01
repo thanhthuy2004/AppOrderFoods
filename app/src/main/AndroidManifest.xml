@@ -14,11 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChangPassOtpVetifi"></activity>
-        <activity android:name=".ChangPassOTP" />
         <activity android:name=".ChangPass" />
-        <activity android:name=".OTPVerify" />
-        <activity android:name=".LoginOTP" />
         <activity android:name=".Demo"
             android:exported="true">
             <intent-filter>
@@ -28,9 +24,9 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
+<!--        <meta-data-->
+<!--            android:name="com.facebook.sdk.ApplicationId"-->
+<!--            android:value="@string/facebook_app_id" />-->
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
@@ -52,10 +48,10 @@
             android:enabled="true"
             android:exported="true" />
 
-        <provider
-            android:name="com.facebook.FacebookContentProvider"
-            android:authorities="com.facebook.app.FacebookContentProvider162421361046767"
-            android:exported="true" />
+<!--        <provider-->
+<!--            android:name="com.facebook.FacebookContentProvider"-->
+<!--            android:authorities="com.facebook.app.FacebookContentProvider162421361046767"-->
+<!--            android:exported="true" />-->
     </application>
 
 </manifest>

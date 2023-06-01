@@ -2,28 +2,28 @@ package com.ltdd.orderfood;
 
 import android.content.Intent;
 import android.os.Bundle;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.navigation.NavigationView;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.ltdd.orderfood.Common.Common;
 import com.ltdd.orderfood.Interface.ItemClickListener;
 import com.ltdd.orderfood.Model.Category;
-import com.ltdd.orderfood.R;
 import com.ltdd.orderfood.Service.ListenOrder;
 import com.ltdd.orderfood.ViewHolder.MenuViewHolder;
 import com.squareup.picasso.Picasso;
@@ -135,6 +135,12 @@ public class Home extends AppCompatActivity
             signIn.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(signIn);
         }
+        if (id == R.id.change_pass) {
+
+            Intent changePass = new Intent(Home.this, ChangPass.class);
+            changePass.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(changePass);
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -154,13 +160,9 @@ public class Home extends AppCompatActivity
             Intent cartIntent = new Intent(Home.this,OrderStatus.class);
             startActivity(cartIntent);
         } else if (id == R.id.nav_exit) {
-            
+
             this.finishAffinity();
-       // } //else if (id == R.id.nav_share) {
-
-        }// else if (id == R.id.nav_send) {
-
-       // }
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

@@ -2,11 +2,6 @@ package com.ltdd.orderfood;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,14 +11,18 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import com.ltdd.orderfood.ViewHolder.CartAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.ltdd.orderfood.Common.Common;
 import com.ltdd.orderfood.Database.Database;
 import com.ltdd.orderfood.Model.Order;
 import com.ltdd.orderfood.Model.Request;
+import com.ltdd.orderfood.ViewHolder.CartAdapter;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -37,7 +36,7 @@ public class Cart extends AppCompatActivity implements CartAdapter.OnItemClickLi
     FirebaseDatabase database;
     DatabaseReference requests;
     TextView txtTotalPrice;
-    Button btnPlace, btnxoa;
+    Button btnPlace;
     CartAdapter adapter;
     List<Order> cart = new ArrayList<>();
     @Override

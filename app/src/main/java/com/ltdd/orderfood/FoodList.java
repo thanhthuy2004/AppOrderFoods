@@ -1,38 +1,34 @@
 package com.ltdd.orderfood;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Toast;
 
-import com.ltdd.orderfood.ViewHolder.FoodViewHolder;
-import com.facebook.CallbackManager;
-import com.facebook.share.model.SharePhoto;
-import com.facebook.share.model.SharePhotoContent;
-import com.facebook.share.widget.ShareDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.ltdd.orderfood.Database.Database;
-
 import com.ltdd.orderfood.Interface.ItemClickListener;
 import com.ltdd.orderfood.Model.Food;
+import com.ltdd.orderfood.ViewHolder.FoodViewHolder;
 import com.mancj.materialsearchbar.MaterialSearchBar;
 import com.squareup.picasso.Picasso;
-import com.squareup.picasso.Target;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import io.paperdb.Paper;
 
 public class FoodList extends AppCompatActivity {
     RecyclerView recyclerView;
@@ -49,37 +45,28 @@ public class FoodList extends AppCompatActivity {
     //Favorites
     Database localDB;
     //Facebook Share
-    CallbackManager callbackManager;
-    ShareDialog shareDialog;
+
+
     //create target from picasso
-    Target target = new Target() {
-        @Override
-        public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
-            //Create photo from Bitmap
-            SharePhoto photo  = new SharePhoto.Builder().setBitmap(bitmap).build();
-            if (ShareDialog.canShow(SharePhotoContent.class)){
-                SharePhotoContent content = new SharePhotoContent.Builder().addPhoto(photo).build();
-                shareDialog.show(content);
-            }
-        }
 
-        @Override
-        public void onBitmapFailed(Drawable errorDrawable) {
 
-        }
 
-        @Override
-        public void onPrepareLoad(Drawable placeHolderDrawable) {
-
-        }
-    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_list);
-        //Init Facebook
-        callbackManager = CallbackManager.Factory.create();
-        shareDialog = new ShareDialog(this);
+        Paper.init(this);
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentCart = new Intent(FoodList.this,Cart.class);
+                startActivity(intentCart);
+            }
+        });
+
+
         //Firebase
         database = FirebaseDatabase.getInstance();
         foodList = database.getReference("Foods");
@@ -209,14 +196,7 @@ public class FoodList extends AppCompatActivity {
                         }
                     }
                 });
-                viewHolder.share_image.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Picasso.with(getApplicationContext())
-                                .load(model.getImage())
-                                .into(target);
-                    }
-                });
+
 
                 final Food local = model;
                 viewHolder.setItemClickListener(new ItemClickListener() {
