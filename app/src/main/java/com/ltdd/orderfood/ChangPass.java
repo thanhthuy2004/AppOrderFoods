@@ -52,15 +52,15 @@ public class ChangPass extends AppCompatActivity {
                                 mDialog.dismiss();
 
                                 User user = dataSnapshot.child(edtPhone.getText().toString()).getValue(User.class);
-                                String passInput = edtOldPass.getText().toString();
+                                String passInput = edtPassword.getText().toString();
                                 if(passInput.equals(user.getPassword())) {
+                                    user.setPassword(passInput);
                                     talbe_user.child(edtPhone.getText().toString()).setValue(user);
                                     Toast.makeText(ChangPass.this, "Bạn thay đổi thành công", Toast.LENGTH_LONG).show();
                                     finish();
                                 }
                                 else{
                                     Toast.makeText(ChangPass.this, "Mật khẩu cũ mà bạn nhập không đúng!", Toast.LENGTH_LONG).show();
-                                    finish();
                                 }
                             } else {
                                 mDialog.dismiss();

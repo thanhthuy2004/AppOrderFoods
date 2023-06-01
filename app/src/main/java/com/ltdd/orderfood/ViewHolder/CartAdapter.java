@@ -2,14 +2,14 @@ package com.ltdd.orderfood.ViewHolder;
 
 import android.content.Context;
 import android.graphics.Color;
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.amulyakhare.textdrawable.TextDrawable;
 import com.ltdd.orderfood.Common.Common;
@@ -21,14 +21,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-class CartViewHolder extends RecyclerView.ViewHolder implements View.OnCreateContextMenuListener, View.OnLongClickListener {
-    public TextView txt_cart_name,txt_price;
+class CartViewHolder extends RecyclerView.ViewHolder implements View.OnCreateContextMenuListener, View.OnClickListener {
+    public TextView txt_cart_name,txt_price, txt_quantity;
 
     public void setTxt_cart_name(TextView txt_cart_name) {
         this.txt_cart_name = txt_cart_name;
     }
 
-    public ImageView imd_cart_count;
+
     private CartAdapter.OnItemClickListener itemClickListener;
     private Button btnXoa;
 
@@ -36,11 +36,12 @@ class CartViewHolder extends RecyclerView.ViewHolder implements View.OnCreateCon
         super(itemView);
         txt_cart_name = itemView.findViewById(R.id.cart_item_name);
         txt_price = itemView.findViewById(R.id.cart_item_price);
-        imd_cart_count = itemView.findViewById(R.id.cart_item_count);
+        txt_quantity = itemView.findViewById(R.id.cart_item_quantity);
+
         this.itemClickListener = onItemClickListener;
         itemView.setOnCreateContextMenuListener(this);
         btnXoa = itemView.findViewById(R.id.btnxoa);
-        btnXoa.setOnLongClickListener(this);
+        btnXoa.setOnClickListener(this);
     }
     @Override
     public void onCreateContextMenu(ContextMenu contextMenu, View view, ContextMenu.ContextMenuInfo contextMenuInfo) {
@@ -49,9 +50,9 @@ class CartViewHolder extends RecyclerView.ViewHolder implements View.OnCreateCon
     }
 
     @Override
-    public boolean onLongClick(View v) {
+    public void onClick(View v) {
         itemClickListener.deleteItem(getAdapterPosition());
-        return true;
+
     }
 }
 
@@ -77,7 +78,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartViewHolder> {
     @Override
     public void onBindViewHolder(CartViewHolder holder, int position) {
         TextDrawable drawable = TextDrawable.builder().buildRound("" + listData.get(position).getQuantity(), Color.RED);
-        holder.imd_cart_count.setImageDrawable(drawable);
+
 
         DecimalFormat formatter = new DecimalFormat("###,###,###");
         String p = listData.get(position).getPrice();
@@ -85,6 +86,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartViewHolder> {
         int price = (Integer.parseInt(p))*(Integer.parseInt(listData.get(position).getQuantity()));
         holder.txt_price.setText(formatter.format(price)+" VND");
         holder.txt_cart_name.setText(listData.get(position).getProductName());
+        holder.txt_quantity.setText("x "+listData.get(position).getQuantity());
     }
 
     @Override

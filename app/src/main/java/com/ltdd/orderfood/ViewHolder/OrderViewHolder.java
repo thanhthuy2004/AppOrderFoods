@@ -1,8 +1,9 @@
 package com.ltdd.orderfood.ViewHolder;
 
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.ltdd.orderfood.Interface.ItemClickListener;
 import com.ltdd.orderfood.R;
@@ -25,7 +26,7 @@ public class OrderViewHolder extends RecyclerView.ViewHolder implements View.OnC
         txtGmail = itemView.findViewById(R.id.order_gmail);
         txtTotal = itemView.findViewById(R.id.order_total);
 
-      //  itemView.setOnClickListener(this);
+        itemView.setOnClickListener(this);
     }
 
     @Override
