@@ -80,9 +80,9 @@ public class Database extends SQLiteAssetHelper {
         cursor.close();
         return true;
     }
-    public int checkItembyListCart(String idFood, List<Order> cart){
+    public int checkItembyListCart(String id, List<Order> cart){
         for (int i = 0; i <cart.size() ; i++) {
-            if(cart.get(i).getProductId() == idFood){
+            if(Integer.parseInt(cart.get(i).getProductId()) == Integer.parseInt(id)){
                 return i ;
             }
         }
