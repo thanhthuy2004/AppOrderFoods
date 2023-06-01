@@ -31,13 +31,6 @@ public class Common {
 
     }
 
-    public static String getDate(long time) {
-        long currentTimeMillis = System.currentTimeMillis();
-        Date date = new Date(currentTimeMillis);
-        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm");
-        String formattedDateTime = formatter.format(date);
-        return formattedDateTime;
-    }
     public static String getDate() {
         long currentTimeMillis = System.currentTimeMillis();
         Date date = new Date(currentTimeMillis);

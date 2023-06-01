@@ -52,7 +52,6 @@ public class OrderStatus extends AppCompatActivity {
             @Override
             protected void populateViewHolder(OrderViewHolder viewHolder, Request model, int position) {
                 viewHolder.txtOrderId.setText("ID đơn hàng:  "+adapter.getRef(position).getKey());
-//                viewHolder.txtDate.setText("Ngày đặt:  "+Common.getDate(Long.parseLong(adapter.getRef(position).getKey())));
                 viewHolder.txtDate.setText("Ngày đặt:  "+ model.getDate());
                 viewHolder.txtOrderStatus.setText("Trạng thái:  "+Common.convertCodeToStatus(model.getStatus()));
                 viewHolder.txtOrderPhone.setText("SĐT:  "+model.getPhone());
