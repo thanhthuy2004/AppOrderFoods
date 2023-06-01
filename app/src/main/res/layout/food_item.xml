@@ -5,7 +5,7 @@
     android:layout_height="200dp"
     android:layout_margin="8dp"
     app:cardElevation="4dp"
-    app:cardCornerRadius="30dp"
+    app:cardCornerRadius="5dp"
     android:layout_marginBottom="8dp">
 
     <RelativeLayout
@@ -23,20 +23,20 @@
             android:weightSum="10"
             android:orientation="horizontal"
             android:layout_alignParentBottom="true"
-            android:background="#4f0e0d0e"
+            android:background="@drawable/round_bg"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="50dp">
+
             <TextView
                 android:id="@+id/food_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:padding="2dp"
                 android:text="Tên tài liệu"
                 android:textColor="@android:color/white"
-                android:textSize="20sp"
-                android:gravity="center"
-                android:layout_weight="8"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                />
+                android:textSize="20sp" />
 
             <ImageView
                 android:id="@+id/btnShare"
@@ -52,8 +52,8 @@
                 android:id="@+id/fav"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_marginHorizontal="2dp"
-                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_height="50dp"
                 android:padding="2dp"/>
 
         </LinearLayout>

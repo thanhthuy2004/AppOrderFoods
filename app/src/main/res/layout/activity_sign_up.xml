@@ -23,15 +23,11 @@
             android:background="@drawable/eddittext_style"
             android:id="@+id/edtPhone"
             android:hint="Số điện thoại"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
             android:textSize="20sp"
-            android:clickable="false"
-            android:cursorVisible="false"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
+
             />
         <EditText
             android:layout_margin="8dp"

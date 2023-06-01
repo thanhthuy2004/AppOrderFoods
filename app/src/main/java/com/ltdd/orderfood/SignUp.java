@@ -30,8 +30,8 @@ public class SignUp extends AppCompatActivity {
         edtPassword =  findViewById(R.id.edtPassword);
 
         btnSignUp =  findViewById(R.id.btnSignUp);
-        sdt=getIntent().getExtras().getString("SDT");
-        edtPhone.setText(sdt);
+
+//        edtPhone.setText(sdt);
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference talbe_user = database.getReference("User");
