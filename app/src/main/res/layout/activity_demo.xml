@@ -35,7 +35,7 @@
             android:fontFamily="@font/lobster"
             android:gravity="center"
             android:text="Order Food And Drink"
-            android:textColor="#ff5353"
+            android:textColor="@color/colorPrimary"
             android:textSize="38dp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="0dp"
