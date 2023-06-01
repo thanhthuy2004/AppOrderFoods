@@ -27,6 +27,7 @@ import com.ltdd.orderfood.Model.Request;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Cart extends AppCompatActivity implements CartAdapter.OnItemClickListener {
@@ -53,6 +54,7 @@ public class Cart extends AppCompatActivity implements CartAdapter.OnItemClickLi
 
         txtTotalPrice =  findViewById(R.id.total);
         btnPlace = findViewById(R.id.btnPlaceOrder);
+
 
         btnPlace.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,6 +109,7 @@ public class Cart extends AppCompatActivity implements CartAdapter.OnItemClickLi
 
     private void loadListDocument() {
         cart = new Database(this).getCarts();
+
         adapter = new CartAdapter(cart, this,this);
         adapter.notifyDataSetChanged();
         recyclerView.setAdapter(adapter);

@@ -52,6 +52,7 @@ public class Database extends SQLiteAssetHelper {
                 order.getDiscount());
         db.execSQL(query);
     }
+
     public void cleanCart(){
         SQLiteDatabase db = getReadableDatabase();
         String query = String.format("DELETE FROM OrderDetail");
@@ -78,5 +79,13 @@ public class Database extends SQLiteAssetHelper {
         }
         cursor.close();
         return true;
+    }
+    public int checkItembyListCart(String idFood, List<Order> cart){
+        for (int i = 0; i <cart.size() ; i++) {
+            if(cart.get(i).getProductId() == idFood){
+                return i ;
+            }
+        }
+        return -1;
     }
 }

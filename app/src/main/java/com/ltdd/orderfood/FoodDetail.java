@@ -29,7 +29,9 @@ import com.squareup.picasso.Picasso;
 import com.stepstone.apprating.AppRatingDialog;
 import com.stepstone.apprating.listener.RatingDialogListener;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class FoodDetail extends AppCompatActivity implements RatingDialogListener {
     ElegantNumberButton numberButton;
@@ -45,6 +47,8 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
     DatabaseReference ratingTbl;
     RecyclerView.LayoutManager layoutManager;
     FirebaseRecyclerAdapter<Rating,FoodViewHolder> adapter;
+
+    List<Order> cart = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +64,8 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
         btnRating =  findViewById(R.id.btnRating);
         ratingBar =  findViewById(R.id.ratingBar);
         numberButton = findViewById(R.id.number_button);
+        cart = new Database(this).getCarts();
+
         btnRating.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,13 +76,29 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
         btnMua.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Database(getBaseContext()).addToCart(new Order(
-                        foodId,
-                        currentFood.getName(),
-                        numberButton.getNumber(),
-                        currentFood.getPrice(),
-                        currentFood.getDiscount()
-                ));
+
+                int getIndexCart = new Database(getBaseContext()).checkItembyListCart(foodId,cart);
+                if(  getIndexCart == -1){
+                    new Database(getBaseContext()).addToCart(new Order(
+                            foodId,
+                            currentFood.getName(),
+                            numberButton.getNumber(),
+                            currentFood.getPrice(),
+                            currentFood.getDiscount()
+                    ));
+                }else {
+                    int quantity  = Integer.parseInt(cart.get(getIndexCart).getQuantity())
+                            + Integer.parseInt(numberButton.getNumber());
+                    cart.get(getIndexCart).setQuantity(String.valueOf(quantity));
+                    new Database(getBaseContext()).cleanCart();
+                    for (Order item:cart) {
+
+                        new Database(getBaseContext()).addToCart(item);
+                    }
+
+                }
+
+
                 Toast.makeText(FoodDetail.this,"Thêm vào giỏ hàng",Toast.LENGTH_SHORT).show();
             }
 
