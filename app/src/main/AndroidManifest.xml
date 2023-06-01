@@ -42,16 +42,13 @@
         <activity android:name=".FoodDetail" />
         <activity android:name=".Cart" />
         <activity android:name=".OrderStatus" />
+        <activity android:name=".OrderDetail" />
 
         <service
             android:name=".Service.ListenOrder"
             android:enabled="true"
             android:exported="true" />
 
-<!--        <provider-->
-<!--            android:name="com.facebook.FacebookContentProvider"-->
-<!--            android:authorities="com.facebook.app.FacebookContentProvider162421361046767"-->
-<!--            android:exported="true" />-->
     </application>
 
 </manifest>

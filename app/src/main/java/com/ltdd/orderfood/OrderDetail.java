@@ -1,14 +1,14 @@
-package com.chungnguyen.orderfoodserver;
+package com.ltdd.orderfood;
+
+import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-import android.widget.TextView;
-
-import com.chungnguyen.orderfoodserver.Common.Common;
-import com.chungnguyen.orderfoodserver.ViewHolder.OrderDetailAdapter;
+import com.ltdd.orderfood.Common.Common;
+import com.ltdd.orderfood.ViewHolder.OrderDetailAdapter;
 
 public class OrderDetail extends AppCompatActivity {
     TextView order_id, order_phone, order_address, order_total;
@@ -36,7 +36,7 @@ public class OrderDetail extends AppCompatActivity {
 
         order_id.setText(String.format("ID ĐƠN HÀNG: %s",order_id_value));
         order_phone.setText(String.format("SĐT: %s",Common.currentRequest.getPhone()));
-        order_address.setText(String.format("ĐỊA CHỈ: %s",Common.currentRequest.getAddress()));
+        order_address.setText(String.format("ĐỊA CHỈ: %s", Common.currentRequest.getAddress()));
         order_total.setText(String.format("GIÁ TIỀN: %s",Common.currentRequest.getTotal()));
 
         OrderDetailAdapter adapter = new OrderDetailAdapter(Common.currentRequest.getFoods());

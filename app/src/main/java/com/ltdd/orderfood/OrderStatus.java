@@ -1,11 +1,15 @@
 package com.ltdd.orderfood;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.ltdd.orderfood.Common.Common;
+import com.ltdd.orderfood.Interface.ItemClickListener;
 import com.ltdd.orderfood.Model.Request;
 import com.ltdd.orderfood.ViewHolder.OrderViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -46,8 +50,17 @@ public class OrderStatus extends AppCompatActivity {
                 viewHolder.txtOrderPhone.setText("SĐT:  "+model.getPhone());
                 viewHolder.txtGmail.setText("Địa chỉ:  "+model.getAddress());
                 viewHolder.txtTotal.setText("Tổng:  "+model.getTotal());
+
+                viewHolder.setItemClickListener((view, position1, isLongClick) -> {
+                    Intent orderDetail = new Intent(OrderStatus.this, OrderDetail.class);
+                    Common.currentRequest = model;
+                    orderDetail.putExtra("OrderId", adapter.getRef(position1).getKey());
+                    startActivity(orderDetail);
+
+                });
             }
         };
+        adapter.notifyDataSetChanged();
         recyclerView.setAdapter(adapter);
     }
 }

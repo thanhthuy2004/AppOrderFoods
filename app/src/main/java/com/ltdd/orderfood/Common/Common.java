@@ -4,6 +4,7 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
+import com.ltdd.orderfood.Model.Request;
 import com.ltdd.orderfood.Model.User;
 
 
@@ -11,6 +12,7 @@ import com.ltdd.orderfood.Model.User;
 
 public class Common {
     public static User currentUser;
+    public static Request currentRequest;
 
     public static String convertCodeToStatus(String status) {
         if (status.equals("0"))

@@ -1,4 +1,4 @@
-package com.chungnguyen.orderfoodserver.ViewHolder;
+package com.ltdd.orderfood.ViewHolder;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,8 +8,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.chungnguyen.orderfoodserver.Model.Order;
-import com.chungnguyen.orderfoodserver.R;
+
+import com.ltdd.orderfood.Model.Order;
+import com.ltdd.orderfood.R;
 
 import java.util.List;
 
