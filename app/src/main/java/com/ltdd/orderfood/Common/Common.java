@@ -16,9 +16,9 @@ public class Common {
         if (status.equals("0"))
             return "Đã đặt hàng";
         else if (status.equals("1"))
-            return "Đang gửi thức ăn";
+            return "Đang giao";
         else
-            return "Đã gửi thức ăn";
+            return "Giao thành công";
 
 
     }
