@@ -25,7 +25,6 @@ public class Demo extends AppCompatActivity {
         img.startAnimation(animFade);
         txt_Food.startAnimation(animFade);
         txt_Easy.startAnimation(animFade);
-
         Thread bamgio=new Thread(){
             public void run()
             {

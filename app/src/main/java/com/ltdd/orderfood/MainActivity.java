@@ -66,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
         }
         printKeyHash();
     }
-
     private void printKeyHash() {
         try{
             PackageInfo info = getPackageManager().getPackageInfo("com.ltdd.orderfood", PackageManager.GET_SIGNATURES);
